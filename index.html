@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Website</title>
+        <!-- Normalize evens out the differences between different browsers, makes it easier to make website look the same -->
+            <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <!-- Used for the social icons at the bottom -->
+            <script src="https://kit.fontawesome.com/0bdce687cd.js" crossorigin="anonymous"></script>
+
+
+        <!-- Link to fonts used -->
+            <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+            rel="stylesheet">
+
+            <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <!-- Logo can be added later, don't have one yet -->
+            <div class="logo">
+                <!-- Alt can stay empty because logo is descriptive -->
+                <img src="" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Over Mij</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Mijn Werk</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hoi, ik ben <strong>Jelmer</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">creatief developer</p>
+            <img src="img/jelmer-4.jpg" alt="a picture of Jelmer" class="intro__img">
+        </section>
+
+
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">Wat ik doe</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Studie</h3>
+                    <p>Momenteel zit ik in mijn vierde jaar van CMGT - Creative Media & Game Technologies.
+                        Hoewel de naam anders doet vermoeden ben ik niet opgeleid tot alleen een game dev, maar tot 
+                        <strong>all-round creative developer</strong>. Zo leer ik onder andere fullstack web development, concepten 
+                        tot stand brengen, ontwerptechnieken, ondernemen en samenwerken in een multidisciplinair team. 
+                    </p>
+                </div>  <!-- / service -->
+
+                <div class="service">
+                    <h3>Interesses</h3>
+                    <p>In eerste instantie ben ik deze opleiding gaan doen om echt games te gaan maken. Gaandeweg ben ik er achter gekomen dat ik <strong>full-stack developen</strong> en <strong>web development</strong> eigenlijk veel leuker vindt. Ook vind ik het leuk om onderzoek te doen met en naar de <strong>eindgebruikers</strong>. Ik ben bekend met meerdere programmeertalen zoals <strong>HTML</strong>, <strong>CSS</strong>, <strong>jS</strong>, en <strong>PHP</strong>. 
+                    </p>
+                </div>  <!-- / service -->
+
+                <div class="service">
+                    <h3>Leerdoelen</h3>
+                    <p>Het is voor mij belangrijk om te achterhalen waarin ik me wil specialiseren als developer. Mijn voorkeur gaat uit naar <strong>front-end development</strong>, hoewel ik ook ervaring heb met back-end development en hier ook mee uit de voeten kan. Een aantal onderwerpen die mij aanspreken zijn <strong>digitale toegankelijkheid</strong>, <strong>unieke & responsieve</strong> websites of applicaties en <strong>human-centered design</strong>.
+                    </p>
+                </div>  <!-- / service -->
+            </div>  <!-- / services -->
+
+            <a href="#work" class="btn">Mijn Werk</a>
+        </section>
+
+
+        <!-- About me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Wie ik ben</h2>
+
+            <div class="about-me__body">
+                <p>Mijn volledige naam is Jelmer Rosdorf. Ik ben 25 jaar oud en woon in Schiedam. Na het afronden 
+                    van de HAVO heb ik een tussenjaar genomen om te werken en na te denken over mijn studierichting.
+                    Dat heeft zich uitbetaald, want ik voel me prima op mijn plek bij CMGT!
+                </p>
+                <p>Naast mijn studie ben ik werkzaam bij Pathé als Customer Care Specialist. Bij mijn vorige werkgevers
+                    was ik actief als assistent-afdelingsmanager en verantwoordelijk voor een klein team én als Games & IT Specialist. Ik heb dus
+                     al wat relevante werkervaring opgedaan die ik mee kan nemen naar mijn baan als developer.
+                </p>
+                <p>Mijn vrije tijd breng ik graag door met familie en vrienden. Ook vind ik het leuk om te gamen of voetbal te kijken (en soms te spelen). Mijn belangrijkste eigenschappen zijn sociaal en leergierig. Als ik bezig ben met een leuk project zet ik mijn tanden erin en ga ik er volledig voor, hoewel ik soms nog wel eens té veel doorvraag...
+                </p>
+            </div>
+
+            <img src="img/jelmer-3.PNG" alt="a picture of Jelmer" class="about-me__img">
+        </section>
+
+
+        <!-- My work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">Mijn werk</h2>
+            <p class="section__subtitle section__subtitle--work">Een selectie van mijn projecten</p>
+
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="portfolio-item-1.html" class="portfolio__item">
+                    <img src="img/portfolio-1.PNG" alt="" class="portfolio__img">
+                </a>
+
+                 <!-- Portfolio item 02 -->
+                 <a href="portfolio-item-2.html" class="portfolio__item">
+                    <img src="img/portfolio-4.PNG" alt="" class="portfolio__img">
+                </a>
+
+                 <!-- Portfolio item 03 -->
+                 <a href="portfolio-item-3.html" class="portfolio__item">
+                    <img src="img/portfolio-17.PNG" alt="" class="portfolio__img">
+                </a> 
+
+                 <!-- Portfolio item 04 -->
+                <!-- <a href="portfolio-item-4.html" class="portfolio__item">
+                    <img src="img/portfolio-9.PNG" alt="" class="portfolio__img">
+                </a>  -->
+
+                 <!-- Portfolio item 05 -->
+                 <!-- <a href="portfolio-item-5.html" class="portfolio__item">
+                    <img src="img/portfolio-13.PNG" alt="" class="portfolio__img">
+                </a> -->
+
+                 <!-- Portfolio item 06 -->
+                <!-- <a href="portfolio-item-3.html" class="portfolio__item">
+                    <img src="img/portfolio-7.png" alt="" class="portfolio__img">
+                </a>  -->
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:jelmerr99@gmail.com" class="footer__link">jelmerr99@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/jelmerrosdorf">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/jelmer-rosdorf-197978214/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>

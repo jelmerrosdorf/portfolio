@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Website</title>
+        <!-- Normalize evens out the differences between different browsers, makes it easier to make website look the same -->
+            <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <!-- Used for the social icons at the bottom -->
+            <script src="https://kit.fontawesome.com/0bdce687cd.js" crossorigin="anonymous"></script>
+
+
+        <!-- Link to fonts used -->
+            <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+            rel="stylesheet">
+
+            <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <!-- Logo can be added later, don't have one yet -->
+            <div class="logo">
+                <!-- Alt can stay empty because logo is descriptive -->
+                <img src="" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">Over Mij</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">Mijn Werk</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!-- Introduction -->
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <strong>Appsessibility</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">App voor visueel beperkten</p>
+            <img src="img/portfolio-2.png" alt="a picture of Jelmer's work" class="intro__img">
+        </section>
+
+
+        <!-- Project content -->
+        <div class="portfolio-item-individual">
+            <p>Het tweede studiejaar zijn we begonnen met een halfjaarproject voor een 
+                opdrachtgever. In een team van 5 personen ben ik voor Stichting Accessibility
+                aan de slag gegaan om een applicatie te ontwikkelen die hun vrijwilligers ondersteunt
+                bij het verzamelen van data over de toegankelijkheid van openbare gebouwen. 
+            </p>
+            <img src="img/portfolio-3.png" alt="">
+            <p>De tools die zijn gebruikt tijdens het ontwikkelen zijn <strong>React Native</strong>,
+                <strong>Expo</strong> voor het kunnen openen van de app op mobiele apparaten, en <strong>
+                Firebase</strong> voor het opslaan van de data. Het allerbelangrijkste onderdeel van dit project was dat de applicatie moest werken
+                met een screenreader, zodat blinde mensen hem kunnen gebruiken. Je kan een demo hiervan zien via de onderstaande link. 
+            </p>
+            <p><iframe width="420" height="315" class="portfolio-item__video"
+                src="https://www.youtube.com/embed/lQHADbCb65M">
+                </iframe></p>
+            <p>Binnen dit project ben ik met name verantwoordelijk geweest voor het afnemen van 
+                interviews met de doelgroep, planning en projectmanagement, het ontwikkelen van
+                het registratie & login systeem met Firebase en het testen van de applicatie met de 
+                doelgroep. Bekijk de code op mijn Github via de button hieronder!
+            </p>
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:jelmerr99@gmail.com" class="footer__link">jelmerr99@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/jelmerrosdorf/Appsessibility-TLE">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/jelmer-rosdorf-197978214/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>
